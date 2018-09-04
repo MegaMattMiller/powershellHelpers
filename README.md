@@ -10,3 +10,5 @@ $GithubPath = [Environment]::GetFolderPath("MyDocuments") + "\Github\"
  . ($GithubPath + "\powershellHelpers\powershellHelpers.ps1")
 
 ```
+
+These helpers assume you have VSCode installed as well as Vim. Feel free to change the editors where needed.
