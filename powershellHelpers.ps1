@@ -2,6 +2,7 @@
 $DesktopPath = [Environment]::GetFolderPath("Desktop")
 $UserPath = [Environment]::GetFolderPath("User")
 $GithubPath = [Environment]::GetFolderPath("MyDocuments") + "\Github\"
+$GitlabPath = [Environment]::GetFolderPath("MyDocuments") + "\GitLab\"
 
 # Shortcuts for zipping around easily.
 function user { Set-Location $UserPath }
