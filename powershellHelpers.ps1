@@ -2,12 +2,13 @@
 $DesktopPath = [Environment]::GetFolderPath("Desktop")
 $UserPath = [Environment]::GetFolderPath("User")
 $GithubPath = [Environment]::GetFolderPath("MyDocuments") + "\Github\"
-$GitlabPath = [Environment]::GetFolderPath("MyDocuments") + "\GitLab\"
+$GitLabPath = [Environment]::GetFolderPath("MyDocuments") + "\GitLab\"
 
 # Shortcuts for zipping around easily.
 function user { Set-Location $UserPath }
 function desk { Set-Location $DesktopPath }
 function github { Set-Location $GithubPath }
+function gitlab { Set-Location $GitLabPath }
 
 # Replace standard `cd` alias with one that can follow .lnk shortcuts.
 Remove-Item alias:cd -force
