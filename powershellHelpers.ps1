@@ -12,17 +12,14 @@ function gitlab { Set-Location $GitLabPath }
 
 # Replace standard `cd` alias with one that can follow .lnk shortcuts.
 Remove-Item alias:cd -force
-function cd($target)
-{
-    if($target.EndsWith(".lnk"))
-    {
+function cd($target) {
+    if ($target.EndsWith(".lnk")) {
         $sh = New-Object -com wscript.shell
         $fullpath = Resolve-Path $target
         $targetpath = $sh.CreateShortcut($fullpath).TargetPath
         Set-Location $targetpath
     }
-    else
-    {
+    else {
         Set-Location $target
     }
 }
