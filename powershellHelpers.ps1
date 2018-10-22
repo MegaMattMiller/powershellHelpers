@@ -27,5 +27,5 @@ function cd($target) {
 # Tools and Features
 function outy { shutdown /s /f /t 0 } # It's 5:00 somewhere.
 function edit { code $PROFILE }
-function hosts { vim "C:\Windows\System32\drivers\etc\hosts" }
+function hosts { & $hostsTextEditor "C:\Windows\System32\drivers\etc\hosts" }
 function touch($filename) { Write-Output $null >> $filename }

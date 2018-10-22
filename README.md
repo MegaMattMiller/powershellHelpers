@@ -5,7 +5,7 @@ This is assuming you clone this repo to your GitHub folder.
 Please adjust your path as necessary.
 
 ```
-
+$hostsTextEditor = 'vim.exe'
 $GithubPath = [Environment]::GetFolderPath("MyDocuments") + "\Github\"
  . ($GithubPath + "\powershellHelpers\powershellHelpers.ps1")
 
