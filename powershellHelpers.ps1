@@ -27,6 +27,6 @@ function cd($target) {
 # Tools and Features
 function outy { shutdown /s /f /t 0 } # It's 5:00 somewhere.
 function editProfile { code $PROFILE }
-function hosts { & $hostsTextEditor "C:\Windows\System32\drivers\etc\hosts" }
+function editHosts { & $hostsTextEditor "C:\Windows\System32\drivers\etc\hosts" }
 function touch($filename) { Write-Output $null >> $filename }
 function ex { explorer .}
